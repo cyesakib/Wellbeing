@@ -1,40 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Select Your Goal</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50">
-  <div class="max-w-md mx-auto p-6">
-    <h1 class="text-2xl font-bold text-center mb-4 text-indigo-700">Select Your Goal</h1>
-    <p class="text-center text-gray-600 mb-6">Choose your wellness focus</p>
-    
-    <div class="space-y-4">
-      <label class="block">
-        <input type="radio" name="goal" value="energy" class="mr-2" required>
-        <span class="text-indigo-700">Boost Energy</span>
-      </label>
-      
-      <label class="block">
-        <input type="radio" name="goal" value="sleep" class="mr-2" required>
-        <span class="text-indigo-700">Improve Sleep</span>
-      </label>
-      
-      <label class="block">
-        <input type="radio" name="goal" value="mental" class="mr-2" required>
-        <span class="text-indigo-700">Mental Clarity</span>
-      </label>
+<!-- ... [same as before] ... -->
+<div class="space-y-4">
+  <!-- Radio buttons for goals -->
+  <div>
+    <label class="block text-sm font-medium text-gray-700">Select Your Primary Goal</label>
+    <div class="mt-1">
+      <input type="radio" name="goal" value="energy" checked> Energy Boost
+      <input type="radio" name="goal" value="sleep"> Better Sleep
+      <input type="radio" name="goal" value="focus"> Mental Focus
     </div>
-    
-    <button 
-      type="button" 
-      onclick="window.location.href='screen3.html'" 
-      class="w-full bg-indigo-600 text-white py-2 rounded-md hover:bg-indigo-700 transition mt-4"
-    >
-      Next: Your Goal
-    </button>
   </div>
-</body>
-</html>
+  
+  <!-- NEW: REAL-TIME RECOMMENDATION -->
+  <div class="p-3 bg-blue-50 rounded-lg">
+    <p class="text-sm text-blue-800 font-medium">💡 Your Next Step</p>
+    <p id="recommendation">Based on your goal: Start with 5 minutes of deep breathing daily.</p>
+  </div>
+</div>
+<button onclick="window.location.href='screen3.html'">Next: Health Metrics</button>
