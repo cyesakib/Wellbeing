@@ -1,22 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nutrition</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Tracker - Recommendation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8fafc;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 1.8rem;
+            color: #2c5282;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        .recommendation {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .recommendation h2 {
+            color: #2c5282;
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+        .recommendation p {
+            color: #555;
+            font-size: 1rem;
+        }
+        .action-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .action-step {
+            padding: 8px;
+            background-color: #f0f7ff;
+            border-radius: 5px;
+            border-left: 3px solid #2c5282;
+        }
+        .button {
+            background-color: #2c5282;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #1a3a5e;
+        }
+    </style>
 </head>
-<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen p-4">
-  <div class="max-w-md mx-auto">
-    <h1 class="text-2xl font-bold text-center mb-4 text-indigo-700">Nutrition</h1>
-    <p class="text-center text-gray-60">Build healthy eating habits</p>
-    
-    <button 
-      class="bg-indigo-600 text-white px-4 py-2 rounded-md w-full hover:bg-indigo-700 transition"
-      onclick="window.location.href='screen8.html'"
-    >
-      Next: Finish
-    </button>
-  </div>
+<body>
+    <div class="container">
+        <h1>Your Wellness Recommendation</h1>
+        
+        <div class="recommendation">
+            <h2>Improve Focus</h2>
+            <p>Based on your current energy levels and mental focus, here's what you can do:</p>
+        </div>
+        
+        <div class="action-steps">
+            <div class="action-step">Take a 5-minute walk outside to boost your energy</div>
+            <div class="action-step">Practice 10 minutes of deep breathing to reduce stress</div>
+            <div class="action-step">Try a short meditation session to improve mental clarity</div>
+        </div>
+        
+        <button class="button" onclick="window.location.href='screen8.html'">Next</button>
+    </div>
 </body>
 </html>
