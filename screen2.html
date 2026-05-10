@@ -9,11 +9,29 @@
 <body class="bg-gray-50">
   <div class="max-w-md mx-auto p-6">
     <h1 class="text-2xl font-bold text-center mb-4 text-indigo-700">Select Your Goal</h1>
-    <p class="text-center text-gray-600">Choose your wellness focus</p>
+    <p class="text-center text-gray-600 mb-6">Choose your wellness focus</p>
+    
+    <div class="space-y-4">
+      <label class="block">
+        <input type="radio" name="goal" value="energy" class="mr-2" required>
+        <span class="text-indigo-700">Boost Energy</span>
+      </label>
+      
+      <label class="block">
+        <input type="radio" name="goal" value="sleep" class="mr-2" required>
+        <span class="text-indigo-700">Improve Sleep</span>
+      </label>
+      
+      <label class="block">
+        <input type="radio" name="goal" value="mental" class="mr-2" required>
+        <span class="text-indigo-700">Mental Clarity</span>
+      </label>
+    </div>
     
     <button 
-      class="bg-indigo-600 text-white px-4 py-2 rounded-md w-full hover:bg-indigo-700 transition mt-4"
-      onclick="window.location.href='screen3.html'"
+      type="button" 
+      onclick="window.location.href='screen3.html'" 
+      class="w-full bg-indigo-600 text-white py-2 rounded-md hover:bg-indigo-700 transition mt-4"
     >
       Next: Your Goal
     </button>
