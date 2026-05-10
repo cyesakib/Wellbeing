@@ -6,16 +6,55 @@
   <title>Mental Health</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen p-4">
-  <div class="max-w-md mx-auto">
+<body class="bg-gray-50">
+  <div class="max-w-md mx-auto p-6">
     <h1 class="text-2xl font-bold text-center mb-4 text-indigo-700">Mental Health</h1>
-    <p class="text-center text-gray-60">Manage your mental well-being</p>
+    <p class="text-center text-gray-600 mb-6">Monitor your mental state</p>
+    
+    <div class="space-y-4">
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Stress Level</label>
+        <div class="mt-1">
+          <input type="range" 
+                 min="1" 
+                 max="10" 
+                 value="4" 
+                 class="w-full bg-gray-200 rounded-lg cursor-pointer"
+                 id="stress-slider">
+        </div>
+      </div>
+      
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Focus Duration</label>
+        <div class="mt-1">
+          <input type="range" 
+                 min="5" 
+                 max="60" 
+                 value="20" 
+                 class="w-full bg-gray-200 rounded-lg cursor-pointer"
+                 id="focus-duration-slider">
+        </div>
+      </div>
+      
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Mood Score</label>
+        <div class="mt-1">
+          <input type="range" 
+                 min="1" 
+                 max="10" 
+                 value="7" 
+                 class="w-full bg-gray-200 rounded-lg cursor-pointer"
+                 id="mood-slider">
+        </div>
+      </div>
+    </div>
     
     <button 
-      class="bg-indigo-600 text-white px-4 py-2 rounded-md w-full hover:bg-indigo-700 transition"
-      onclick="window.location.href='screen6.html'"
+      type="button" 
+      onclick="window.location.href='screen6.html'" 
+      class="w-full bg-indigo-600 text-white py-2 rounded-md hover:bg-indigo-700 transition mt-4"
     >
-      Next: Sleep
+      Next: Nutrition
     </button>
   </div>
 </body>
